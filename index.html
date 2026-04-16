@@ -30,24 +30,31 @@ Select ONE Additional
       <li>
         <h3 id="mem1">adonis</h3>
         <p id="A">More about adonis.</p>
+        <img id="R" src="https://i.pinimg.com/474x/a1/c2/fc/a1c2fc93d689c6ad9a28efefbb8caca4.jpg">
       </li>
 
       <li>
         <h3 id="mem2">loser boy</h3>
         <p id="L">More about loser boy.</p>
+        <img id="V" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr8dXGy8aUHKmluZ-TxSHs3Rig1mYvPCHeZA&s">
       </li>
 
       <li>
         <h3 id="mem3">story</h3>
         <p id="S">More about the story</p>
+        <img id="W" src="https://i.pinimg.com/474x/d0/0a/1e/d00a1e21e8ffe822988d025f74f5f3fc.jpg">
       </li>
     </ul>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+      $("#W").hide()
+      $("#R").hide()
+      $("#V").hide()
 
       // ======================== Button #1
       $("#mem1-button").click(function () {
+        $("#R").show(2000)
         $("#mem1").css("color", "pink");
         $("#A").html("name:adonis <br> personality: curious, blunt, talks alot but no expression, violent when provoked<br> likes: all things nature, loser boy, his sister, animals" 
           
@@ -56,6 +63,7 @@ Select ONE Additional
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
+         $("#V").show(2000)
         $("#mem2").css("color", "blue");
         $("#L").html("name:loser boy <br> personality: he's kinda dumb but has a good heart, loyal, weak for pretty faces<br> likes: adonis, pretty people, his family, adventure, shiny things" 
       )
@@ -64,8 +72,10 @@ Select ONE Additional
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
+        $("#W").show(2000)
         $("#mem3").css("color", "teal");
         $("#mem3").text("story");
+        $("#S").html(" vengeance and lust, love and forgetting, family or betryal, thr ocean answer to all" )
       });
 
 
